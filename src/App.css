@@ -129,7 +129,7 @@ textarea {
   background: white;
   color: black;
   font-size: 10px;
-  margin:-5%;
+  text-align: center;
   margin-left: 2%;
   
 }
@@ -138,6 +138,8 @@ textarea {
   background: rgb(19, 201, 59);
 }
 
+
+
 .Record {
   width: 100vw;
   height: auto;
@@ -145,6 +147,9 @@ textarea {
   align-items: center;
   flex-direction: column;
   margin-left: -15%;
+}
+.post {
+  text-align:center;
 }
 
 .Record p {

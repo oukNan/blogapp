@@ -1,0 +1,6 @@
+blogapp updates
+
+2.8.2023
+--> add ins:
+	delete button on image section, 
+	make post area private to only logged in users. 

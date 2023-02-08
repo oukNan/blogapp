@@ -17,7 +17,7 @@ const uploadImage = () => {
         if(uploadImage==null) return;
 
        //else
-const imageRef = ref(storage, `images/${imageToUpload.name + v4()}` )
+const imageRef = ref(storage, `images/${imageToUpload.name + v4()}` );
 uploadBytes(imageRef,imageToUpload).then(() => {
     alert("success!");
         });
@@ -26,19 +26,19 @@ uploadBytes(imageRef,imageToUpload).then(() => {
         listAll(imageListRef).then((response) => {
             response.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
-                        setImageList((prev) => [...prev, url]);
+                        setImageList((prev) => [...prev, url])
                 })
             })
         })
-    }, [])
+    }, )
 
 return (
     <div className='Record'><p>Picture Gallery</p>
     <input type="file" onChange={(event) => {setImageToUpload(event.target.files[0])}}/>
         <button onClick={uploadImage}>Upload</button>
-        {imageList.map((url) => {
+        { imageList.map((url) => {
             return <img src={imageList}/>
-        })}
+        })};
     </div>
 
 );
